@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - AcademiaAvenue</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(to right, #6a2c91, #ac87a5);
+            color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+        section {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #6a2c91;
+            border-bottom: 2px solid #6a2c91;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+            text-transform: uppercase;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .team-member {
+            background-color: #e9f5ef;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px;
+            flex: 1 1 calc(33.333% - 20px); /* Responsive flex item */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .team-member h3 {
+            color: #6a2c91;
+            margin-bottom: 10px;
+        }
+        .team-member p {
+            font-size: 0.9rem;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #6a2c91;
+            color: #f9f9f9;
+            margin-top: 20px;
+        }
+        @media (max-width: 600px) {
+            .team-member {
+                flex: 1 1 100%; /* Stack items on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>About Us</h1>
+    </header>
+
+    <section>
+        <h2>Our Mission</h2>
+        <p>
+            At AcademiaAvenue, our mission is to empower B.Tech students by providing accessible resources, valuable study materials, and guidance to help them succeed in their academic and professional journeys.
+        </p>
+
+        <h2>Our Vision</h2>
+        <p>
+            We envision a community of learners who are equipped with the knowledge and skills necessary to thrive in the technology-driven world. We aim to be a leading platform that bridges the gap between education and industry.
+        </p>
+
+        <h2>Our Team</h2>
+        <div class="team">
+            <div class="team-member">
+                <h3>Radha Maddeshiya</h3>
+                <p>Co-founder</p>
+                <p>Dedicated to creating a supportive learning environment for B.Tech students.</p>
+            </div>
+            <div class="team-member">
+                <h3>Astha Bhardwaj</h3>
+                <p>Co-founder</p>
+                <p>Passionate about education and technology, striving to innovate learning experiences.</p>
+            </div>
+            <div class="team-member">
+                <h3>Om Narayan Shastri</h3>
+                <p>Content Manager</p>
+                <p>Curating and managing quality educational content for our users.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 AcademiaAvenue | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - AcademiaAvenue</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            margin: 0;
+        }
+        .signup-container {
+            background-color: #fff;
+            padding: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            max-width: 400px;
+            width: 100%;
+        }
+        h2 {
+            text-align: center;
+            color: #6a2c91;
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        .signup-button {
+            width: 100%;
+            padding: 10px;
+            background-color: #6a2c91;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .signup-button:hover {
+            background-color: #8b52b5;
+            transform: translateY(-3px);
+        }
+        .already-account {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+        .already-account a {
+            color: #6a2c91;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .already-account a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="signup-container">
+        <h2>Create Your Account</h2>
+        <form action="welcome.html" method="POST">
+            <input type="text" class="input-field" name="fullname" placeholder="Full Name" required>
+            <input type="email" class="input-field" name="email" placeholder="Email Address" required>
+            <input type="text" class="input-field" name="username" placeholder="Username" required>
+            <input type="password" class="input-field" name="password" placeholder="Password" required>
+            <input type="password" class="input-field" name="confirm-password" placeholder="Confirm Password" required>
+            <button type="submit" class="signup-button">Sign Up</button>
+        </form>
+        <div class="already-account">
+            <p>Already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
